@@ -53,17 +53,17 @@
       border-radius: 50%;
       box-shadow: 3px 3px 10px #666;
       width: 3em;
+      font-family: sans-serif;
+      display: inline-block;
       padding: 1em 0;
       text-align: center;
       font-size: 200%;
-      font-family: sans-serif;
-      display: inline-block;
       margin-right: 1em;
     }
   </style>
 </head>
 <body>
-
+<script src="https://code.jquery.com/jquery.js"></script>
 <h1>Skills&mdash;Javascript</h1>
 <p>
   For each numbered problem, fill in the corresponding <code>&lt;script&gt;</code> section in the
@@ -231,7 +231,11 @@
 </fieldset>
 
 <script>
-  // code here for above problem
+  // function alertMe(evt) {
+  //   alert("Hey, how's it going?");
+  // }
+  $('.tricky-to-find').click(function (evt) {
+      alert("Wingardium Leviosa!")  });
 </script>
 
 <div class="hint">
@@ -258,7 +262,7 @@
 </fieldset>
 
 <script>
-  // put your code here
+  $("img#kittenz-rule").dblclick( function (evt){ $("img#kittenz-rule").attr('src', "http://3.bp.blogspot.com/-r7DYXpOxfMQ/VcVCQ_fRfAI/AAAAAAAAEGI/WG0vmGDtvXg/s1600/bernese_mountain_dog-1.jpg") });
 </script>
 
 <div class="hint">
@@ -291,7 +295,16 @@
 </fieldset>
 
 <script>
-  // put your code here
+  // $('#make-a-porcupine').click(function (evt) {
+  //     setTimeout($("#cute-porcupine-image").show()."#cute-porcupine-image")fadeIn(5000), 
+  //     1000);
+
+    function showPorcupine(evt) {
+      setTimeout(function() { $("#cute-porcupine-image").fadeIn(5000).show();}, 1000);
+    }
+
+    $('#make-a-porcupine').click(showPorcupine);
+
 </script>
 
 <div class="hint">
